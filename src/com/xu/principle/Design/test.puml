@@ -1,0 +1,23 @@
+@startuml
+
+interface List
+class Father
+class Son
+class ArrayList
+class Student
+class School
+class Person
+class Head
+class IDCard
+
+List <|.. ArrayList
+
+School ..> Student
+Father <|--Son
+
+'person o-- IDCard
+person *-- Head
+
+
+
+@enduml

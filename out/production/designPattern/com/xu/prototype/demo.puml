@@ -1,0 +1,9 @@
+@startuml
+
+class Sheep
+class Client
+Sheep : String  name
+
+Client ..> Sheep
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+
+class Pizza
+Pizza : void prepare()
+Pizza : void bake()
+Pizza : void cut()
+Pizza : void box()
+
+class OrderPizza
+OrderPizza : Pizza createPizza()
+
+class BJOrderPizza
+
+class LDOrderPizza
+
+class BJCheesePizza
+class LDCheesePizza
+class BJPepperPizza
+class LDPepperPizza
+
+BJOrderPizza ..> BJCheesePizza
+BJOrderPizza ..> BJPepperPizza
+LDOrderPizza ..> LDCheesePizza
+LDOrderPizza ..> LDPepperPizza
+Pizza <|-- BJCheesePizza
+Pizza <|-- LDCheesePizza
+Pizza <|-- BJPepperPizza
+Pizza <|-- LDPepperPizza
+OrderPizza <|-- BJOrderPizza
+OrderPizza <|-- LDOrderPizza
+
+
+
+
+@enduml
