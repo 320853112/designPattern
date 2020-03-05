@@ -39,4 +39,6 @@ public class Sheep {
     public void setColor(String color) {
         this.color = color;
     }
+
+
 }

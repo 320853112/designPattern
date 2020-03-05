@@ -7,5 +7,15 @@ package com.xu.spring;
  **/
 public class Monster {
     private Integer id = 10;
-    private String nickname = "牛魔王"；
+    private String nickname = "牛魔王";
+    private String skill = "芭蕉扇";
+    public Monster(){
+        System.out.println("build");
+    }
+
+    public Monster(Integer id, String nickname, String skill) {
+        this.id = id;
+        this.nickname = nickname;
+        this.skill = skill;
+    }
 }
